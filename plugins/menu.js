@@ -30,30 +30,29 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 %me 」
-│ Hai, %name!
-│
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
-╰────
+「 ElainaChan 」
+☕ Hai, %name!
+
+☕ Tersisa *%limit Limit*
+☕ Role *%role*
+☕ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
+☕ %totalexp XP in Total
+
+☕ Tanggal: *%week %weton, %date*
+☕ Tanggal Islam: *%dateIslamic*
+☕ Waktu: *%time*
+
+☕ Uptime: *%uptime (%muptime)*
+☕ Database: %rtotalreg of %totalreg
+☕ Youtube : https://youtu.be/d6fs0R9soCY
+
 %readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '「 %category 」',
+  body: '🔖 %cmd %islimit %isPremium',
+  footer: '\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+*Elina*
+*ElainaChanBaka~*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
